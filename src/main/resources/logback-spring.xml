@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+	<logger name="mike.demo" level="INFO"
+			additivity="false">
+	</logger>
+	<logger name="org.springframework" level="INFO"
+			additivity="false">
+	</logger>
+	<springProfile name="staging">
+		<logger name="mike.demo" level="INFO" />
+	</springProfile>
+</configuration>
